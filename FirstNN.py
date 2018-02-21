@@ -46,7 +46,7 @@ print(Y_prediction_test)
 
 
 
-w,b = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 250, learning_rate = 0.01, print_cost = True)
+w,b = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 500, learning_rate = 0.01, print_cost = True)
 
 
 # Print train/test Errors
