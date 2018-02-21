@@ -39,8 +39,6 @@ train_set_y= np.array(newY)
 w, b = initialize_with_zeros(train_set_x.shape[0])
 Y_prediction_test = predict(w, b, test_set_x)
 Y_prediction_train = predict(w, b, train_set_x)
-plt.imshow(X[15].reshape(28,28),cmap='gray')
-plt.show()
 # Print train/test Errors
 print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - train_set_y)) * 100))
 print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100))
