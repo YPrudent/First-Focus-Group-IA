@@ -57,4 +57,4 @@ def superieur50Pourcent():
 	print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - train_set_y)) * 100))
 	print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100))
 	print(Y_prediction_test)
- 	assert 100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100 > 50
+	assert 100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100 > 50
