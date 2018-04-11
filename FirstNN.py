@@ -44,18 +44,17 @@ Y_prediction_train = predict(w, b, train_set_x)
 print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - train_set_y)) * 100))
 print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100))
 print(Y_prediction_test)
-
-
-
-
-
-def test_superieur50Pourcent():
-	w,b = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 500, learning_rate = 0.01, print_cost = True)
+w,b = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 500, learning_rate = 0.01, print_cost = True)
 	# Print train/test Errors
 	Y_prediction_test = predict(w, b, test_set_x)
 	Y_prediction_train = predict(w, b, train_set_x)
 	print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - train_set_y)) * 100))
 	print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100))
 	print(Y_prediction_test)
+
+
+
+
+def test_superieur50Pourcent():
 	print("accuracy > 90%")
 	assert 100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100 > 90
