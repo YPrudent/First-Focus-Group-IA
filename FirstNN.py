@@ -49,7 +49,7 @@ print(Y_prediction_test)
 
 
 
-def superieur50Pourcent():
+def test_superieur50Pourcent():
 	w,b = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 500, learning_rate = 0.01, print_cost = True)
 	# Print train/test Errors
 	Y_prediction_test = predict(w, b, test_set_x)
