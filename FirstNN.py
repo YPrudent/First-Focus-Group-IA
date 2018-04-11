@@ -58,5 +58,5 @@ print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - test
 print(Y_prediction_test)
 
 def test_ehlo():
-    assert Y_prediction_test == 100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100 > 50
+    assert 100 - np.mean(np.abs(Y_prediction_test - test_set_y)) * 100 > 50
     assert 0 # for demo purposes
